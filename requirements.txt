@@ -1,56 +1,28 @@
-# CI-RAG MVP Dependencies
+# Minimal dependencies for Railway deployment of app_simple.py
 
 # Core
 openai>=1.50.0
 python-dotenv>=1.0.0
 
-# Document Processing (minimal for MVP)
-unstructured[pdf]>=0.11.0  # PDF parsing
-pypdf>=3.17.0  # PDF text extraction
-python-pptx>=0.6.22  # PPTX parsing
-beautifulsoup4>=4.12.0  # HTML parsing
-lxml>=4.9.3  # HTML/XML parsing
-python-magic>=0.4.27  # File type detection
+# Document Processing (Railway-compatible)
+pypdf>=3.17.0
+python-pptx>=0.6.22
+beautifulsoup4>=4.12.0
+lxml>=4.9.3
 
 # Vector Store & Embeddings
 qdrant-client>=1.7.0
-tiktoken>=0.5.2  # Token counting
+tiktoken>=0.5.2
 
 # Retrieval
-rank-bm25>=0.2.2  # BM25 algorithm
-sentence-transformers>=2.2.2  # For embeddings and reranking
+rank-bm25>=0.2.2
+sentence-transformers>=2.2.2
 
 # UI
 streamlit>=1.30.0
 
-# Data
-pandas>=2.0.0  # For comparison tables
-plotly>=5.18.0  # For visualizations (optional)
-
-# Web Fetching & RSS
-feedparser>=6.0.10  # RSS feed parsing
-requests>=2.32.0  # HTTP requests
-readability-lxml>=0.8.1  # HTML to clean text
-trafilatura>=1.8.0  # Article extraction
-dateparser>=1.2.0  # Parse publication dates
-apscheduler>=3.10.4  # Background scheduling
-
-# API & Export
-fastapi>=0.115.0  # REST API framework
-uvicorn>=0.32.0  # ASGI server
-python-multipart>=0.0.9  # Form data support
-reportlab>=4.0.0  # PDF generation
-openpyxl>=3.1.0  # Excel export
-
-# Academic & Clinical Sources
-biopython>=1.84  # PubMed/Entrez API
-PyMuPDF>=1.24.0  # PDF extraction (fitz)
-scholarly>=1.7.11  # Google Scholar scraping
-arxiv>=2.1.0  # arXiv API
-
 # Web Search
-tavily-python>=0.3.0  # Web search for CI analysis
+tavily-python>=0.3.0
 
-# Testing
-pytest>=7.4.3
-pytest-cov>=4.1.0
+# Data (for visualizations)
+pandas>=2.0.0
