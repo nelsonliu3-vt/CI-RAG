@@ -1,0 +1,160 @@
+{
+  "query": "Update: Final validation test",
+  "program_name": "EGFR Degrader",
+  "facts": [
+    {
+      "id": "fact_001",
+      "entities": [
+        "NCT12345678",
+        "ORR"
+      ],
+      "event_type": "ORR data",
+      "values": {
+        "value": 45,
+        "unit": "%",
+        "CI": "38-52",
+        "n": 150
+      },
+      "date": "2024-12-15",
+      "source_id": "doc_sample_001",
+      "quote": "Objective Response Rate (ORR): 45% (95% CI: 38-52%)",
+      "confidence": 0.8
+    },
+    {
+      "id": "fact_002",
+      "entities": [
+        "NCT12345678",
+        "PFS"
+      ],
+      "event_type": "PFS data",
+      "values": {
+        "value": 6.2,
+        "unit": "months",
+        "CI": "5.1-7.3",
+        "n": 150
+      },
+      "date": "2024-12-15",
+      "source_id": "doc_sample_001",
+      "quote": "Median Progression-Free Survival (PFS): 6.2 months (95% CI: 5.1-7.3 months)",
+      "confidence": 0.8
+    },
+    {
+      "id": "fact_003",
+      "entities": [
+        "NCT12345678",
+        "DCR"
+      ],
+      "event_type": "DCR data",
+      "values": {
+        "value": 85,
+        "unit": "%",
+        "CI": "unknown",
+        "n": 150
+      },
+      "date": "2024-12-15",
+      "source_id": "doc_sample_001",
+      "quote": "Disease Control Rate: 85%",
+      "confidence": 0.8
+    },
+    {
+      "id": "fact_004",
+      "entities": [
+        "NCT12345678",
+        "AE"
+      ],
+      "event_type": "AE data",
+      "values": {
+        "value": 58,
+        "unit": "%",
+        "CI": "unknown",
+        "n": 150
+      },
+      "date": "2024-12-15",
+      "source_id": "doc_sample_001",
+      "quote": "Grade \u22653 Treatment-Related Adverse Events: 58%",
+      "confidence": 0.8
+    }
+  ],
+  "signals": [
+    {
+      "id": "sig_001",
+      "from_fact": "fact_001",
+      "impact_code": "Neutral",
+      "score": 0.6,
+      "why": "ORR data for NCT12345678, ORR noted. Limited strategic implications for our program at this time.",
+      "stance": "Neutral",
+      "stance_rationale": "Low overlap (score=0.0) with our program. Minimal strategic implications.",
+      "overlap_score": 0.0
+    },
+    {
+      "id": "sig_002",
+      "from_fact": "fact_002",
+      "impact_code": "Neutral",
+      "score": 0.6,
+      "why": "PFS data for NCT12345678, PFS noted. Limited strategic implications for our program at this time.",
+      "stance": "Neutral",
+      "stance_rationale": "Low overlap (score=0.0) with our program. Minimal strategic implications.",
+      "overlap_score": 0.0
+    },
+    {
+      "id": "sig_003",
+      "from_fact": "fact_003",
+      "impact_code": "Neutral",
+      "score": 0.6,
+      "why": "DCR data for NCT12345678, DCR noted. Limited strategic implications for our program at this time.",
+      "stance": "Neutral",
+      "stance_rationale": "Low overlap (score=0.0) with our program. Minimal strategic implications.",
+      "overlap_score": 0.0
+    },
+    {
+      "id": "sig_004",
+      "from_fact": "fact_004",
+      "impact_code": "Safety risk",
+      "score": 0.95,
+      "why": "AE data for NCT12345678, AE reveals safety liability in drug class. If we share mechanism, proactive safety monitoring and mitigation strategy required.",
+      "stance": "Neutral",
+      "stance_rationale": "Low overlap (score=0.0) with our program. Minimal strategic implications.",
+      "overlap_score": 0.0
+    }
+  ],
+  "actions": [
+    {
+      "title": "Enhance safety monitoring protocol",
+      "owner": "Medical",
+      "horizon": "1 week",
+      "rationale_facts": [
+        "fact_004"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "title": "Monitor competitive landscape",
+      "owner": "CI Team",
+      "horizon": "Ongoing",
+      "rationale_facts": [
+        "fact_001"
+      ],
+      "confidence": 0.6
+    },
+    {
+      "title": "Monitor competitive landscape",
+      "owner": "CI Team",
+      "horizon": "Ongoing",
+      "rationale_facts": [
+        "fact_001"
+      ],
+      "confidence": 0.6
+    }
+  ],
+  "trace": {
+    "total_facts": 4,
+    "total_signals": 4,
+    "total_actions": 3,
+    "citation_coverage": 0.0,
+    "numeric_traceability": 42.5531914893617,
+    "action_completeness": 100.0,
+    "execution_time_seconds": 20.29,
+    "model_used": "gpt-5-mini",
+    "timestamp": "2025-11-10T20:03:00.544586"
+  }
+}

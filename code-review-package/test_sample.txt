@@ -1,0 +1,18 @@
+KRAS G12C Inhibitor Shows Promise in Phase 2 Trial
+
+Published in Endpoints News - October 15, 2025
+
+Amgen's KRAS G12C inhibitor sotorasib demonstrated a 45% objective response rate (95% CI: 35-55%) in patients with previously treated non-small cell lung cancer (NSCLC), according to data presented at ESMO 2025.
+
+The Phase 2 trial enrolled 120 patients with KRAS G12C-mutant NSCLC who had received at least one prior line of therapy. The primary endpoint was ORR as assessed by independent central review.
+
+Key findings:
+- ORR: 45% (n=54/120)
+- Median duration of response: 10.8 months
+- Median progression-free survival: 8.2 months
+- Grade ≥3 adverse events: 65%
+- Discontinuation due to AEs: 12%
+
+"These results support the continued development of sotorasib in this difficult-to-treat patient population," said lead investigator Dr. Jane Smith from Memorial Sloan Kettering Cancer Center.
+
+The company plans to initiate a Phase 3 trial comparing sotorasib to standard chemotherapy in 2L NSCLC patients with KRAS G12C mutations.

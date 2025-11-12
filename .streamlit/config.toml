@@ -1,0 +1,17 @@
+# Graphite-Sand Theme Configuration
+# Complements theme_bootstrap.py CSS with native Streamlit theming
+
+[theme]
+primaryColor = "#3C3A36"              # warm graphite (accent)
+backgroundColor = "#F4EEE4"           # warm paper beige (background)
+secondaryBackgroundColor = "#FEFDFB" # ivory (surface/cards)
+textColor = "#1E1C1A"                 # warm black text
+font = "sans serif"                   # Inter font loaded via CSS
+
+[server]
+# Optional: Increase file upload size limit (default 200MB)
+maxUploadSize = 200
+
+[browser]
+# Optional: Browser config
+gatherUsageStats = false
